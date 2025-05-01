@@ -1,0 +1,109 @@
+/* Estilo base */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #7ecbff, #4ab7ff); /* Celeste más vivo */
+    color: #000; /* Letras negras */
+    line-height: 1.6;
+}
+
+/* Encabezado con fondo personalizado */
+.header-with-background {
+    background-image: url('imagen-fondo.jpg'); /* Fondo del encabezado */
+    background-size: cover;
+    background-position: center;
+    color: #000; /* Texto negro */
+    text-align: center;
+    padding: 2.5rem;
+}
+
+/* Contenido del encabezado */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image {
+    max-width: 350px; /* Imagen más grande */
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+
+/* Secciones */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000; /* Texto negro */
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Bienvenida */
+.welcome {
+    text-align: center;
+    background: #58b0ff; /* Celeste más vivo */
+    color: #000; /* Texto negro */
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* Video estilizado */
+video {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #58b0ff; /* Bordes celestes más vivos */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #58b0ff; /* Celeste vibrante */
+    color: #000; /* Texto negro */
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries: Ajustes para móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+
+    .header-content {
+        flex-direction: column; /* Ajusta el contenido del encabezado */
+    }
+
+    .header-image {
+        max-width: 200px; /* Reduce la imagen en pantallas más pequeñas */
+    }
+
+    section {
+        padding: 0.5rem; /* Ajusta el espaciado */
+    }
+
+    .welcome {
+        padding: 1.5rem;
+    }
+
+    video {
+        max-width: 90%;
+    }
+}
